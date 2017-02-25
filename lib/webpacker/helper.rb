@@ -13,7 +13,7 @@ module Webpacker::Helper
   #
   #   # In production mode:
   #   <%= javascript_pack_tag 'calendar', 'data-turbolinks-track': 'reload' %> # =>
-  #   <script src="/packs/calendar-1016838bab065ae1e314.js" data-turbolinks-track="reload"></script>
+  #   <script src="/dist/calendar-1016838bab065ae1e314.js" data-turbolinks-track="reload"></script>
   def javascript_pack_tag(name, **options)
     javascript_include_tag(Webpacker::Source.new(name).path, **options)
   end
